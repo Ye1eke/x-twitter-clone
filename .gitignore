@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/.sanity/twitter_clone_nextjs/node_modules
 
 # testing
 /coverage
