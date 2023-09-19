@@ -12,6 +12,7 @@ import {
 } from '@heroicons/react/24/outline'
 import SidebarRow from './SidebarRow'
 import { signOut, signIn, useSession } from 'next-auth/react';
+
 function Sidebar() {
   const { data: session } = useSession()
   return (
@@ -26,6 +27,7 @@ function Sidebar() {
         <SidebarRow Icon={QueueListIcon} title='Lists' />
         <SidebarRow onClick={session ? signOut : signIn} Icon={UserIcon} title={session ? 'Sign Out' : 'Sign In'} />
         <SidebarRow Icon={ListBulletIcon} title='More' />
+        
     </div>
   )
 }
